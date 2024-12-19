@@ -1,0 +1,1371 @@
+:root{
+    --primaryColor: #00A149;
+    --secondaryColor: #FFC222;
+    --mainColor: #FFC222;
+    --textColor: #5C5C5B;
+    --whiteColor: #FFFFFF;
+    --blackColor: #212121;
+    --backgroundColor: #F4F1EA;
+}
+body{
+    background-color: var(--backgroundColor);
+}
+::selection{
+    background-color: var(--primaryColor);
+    color:#fff;
+}
+html::-webkit-scrollbar{
+    width:4px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primaryColor);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgba(0, 255, 255, 0.363);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+img{
+    width: 100%;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+nav .navbar-collapse{
+    margin-left: 80px;
+}
+.nav-item .nav-link{
+    color: black;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    font-size:17px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+.shopping{
+   display: flex;
+   align-items: center;
+   margin-right:20px;
+}
+.shopping a{
+    border: 0;
+    background-color:var(--mainColor);
+    padding: 14px 35px;
+    border-radius:5px;
+    color: white;
+    font-size:19px;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+}
+.shopping a::after{
+    content: "";
+    background-color: var(--primaryColor);
+    width:0%;
+    height:0%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index:-1;
+    transition: all .3s ease-in;
+}
+.shopping a:hover::after{
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+/* the-start */
+.the-start{
+    padding: 50px 30px;
+    background-image: url(../img/hero-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.the-start .start-text{
+    margin-top: 70px;
+    padding: 70px 0;
+    animation-name: show;
+    animation-duration:5s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite;
+   
+}
+@keyframes show {
+    0%{
+     opacity: 0;
+    }
+    100%{
+     opacity: 1;
+    }
+ }
+ .start-img{
+    position: relative;
+     margin-top:90px;
+    margin-left:50px; 
+    animation-name: img;
+    animation-duration:5s;
+    animation-delay:.9s;
+    animation-iteration-count:infinite;
+ }
+ .start-img img{
+    width: 500px;
+ }
+ .start-img::after{
+    content: "";
+    width:300px;
+    height:295px;
+    position: absolute;
+    top:-190px;
+    left:-180px;
+    padding: 0 60px;
+    background-image: url(../img/offer-shape.png);
+ }
+ @keyframes img {
+    0%{
+     opacity: 0;
+    }
+    100%{
+     opacity: 1;
+    }
+ }
+ .start-img2{
+    width:180px;
+    position: relative;
+    margin-left: 90px;
+    padding-left: 50px;
+    animation-name: img2;
+    animation-duration:7s;
+    animation-delay:.10s;
+    animation-iteration-count:infinite;
+
+ }
+ @keyframes img2 {
+    0%{
+     opacity: 0;
+    }
+    100%{
+     opacity: 1;
+    }
+ }
+.the-start .start-text p{
+    color:var(--secondaryColor);
+    font-weight: 600;
+    font-size: 20px;
+}
+.the-start .start-text h1{
+    font-size:60px;
+    color: white;
+
+}
+.start-text a{
+    border: 0;
+    margin-top:20px;
+    background-color:var(--primaryColor);
+    padding: 17px 50px;
+    border-radius:5px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+}
+.start-text a::after{
+    content: "";
+    background-color: var(--mainColor);
+    width:0%;
+    height:0%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index:-1;
+    transition: all .3s ease-in;
+}
+.start-text a:hover::after{
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.start-text i{
+    padding-right:7px;
+}
+.show-food{
+    margin-top: 50PX;
+    padding: 40px 0;
+}
+.show-food .text-show {
+    margin-left:80px;
+    padding-left: 40px;
+    margin-bottom:45px;
+}
+.show-food .text-show p{
+    color: var(--primaryColor);
+    font-weight:600;
+    font-size: 20px;
+    line-height: 2;
+}
+.show-food .text-show h2{
+    font-size:45px;
+    font-weight: 700;
+}
+.food1{
+    background-color:white;
+    text-align: center;
+    padding: 30px 15px;
+    transition: all .3s ease-in;
+}
+.food1 .text-food h3{
+    font-weight: 600;
+    line-height: 2;
+    position: relative;
+}
+.food1 .text-food h3::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #FFC222;
+    width:30%;
+    height: 2px;
+    bottom:0;
+    left:80px;
+    transition: all .3s ease-in;
+}
+.food1 .text-food p{
+    color: var(--mainColor);
+    font-weight:800;
+    font-size:20px;
+    line-height: 2;
+    transition: all .3s ease-in;
+}
+.french img{
+    width:180px;
+}
+.chiken img{
+    width:216px;
+}
+.food1:hover{
+    color: white;
+    background-color: var(--mainColor);
+}
+.food1:hover h3::after{
+    border-bottom:2px solid white ;
+}
+.food1:hover p{
+    color: white;
+}
+/* delishous food */
+.delishous-food{
+    margin-bottom: 50px;
+}
+.show-product{
+    margin-top:67px;
+    margin-left: 20px;
+}
+.img-back{
+    position: relative;
+}
+.delishous-food .img-back img{
+    width:120px;
+    position: absolute;
+    top:-60px;
+    left:160px;
+}
+.show-product{
+    display: flex;
+}
+.mainfood{
+    background-image: url(../img/offer-bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:500px;
+    height:370px;
+    overflow: hidden;
+}
+.show-product h5{
+    color: var(--mainColor);
+    position: absolute;
+    margin: 50px 45px;
+    font-weight: 600;
+}
+.show-product h3{
+    position: relative;
+    color: white;
+    font-size:50px;
+    font-weight: 600;
+    margin: 80px 45px;
+    z-index: 22;
+}
+.pizza-item{
+    margin-left: 90px;
+}
+.show-product .show-pro1 {
+    position: relative;
+}
+.show-product .show-pro1 img{
+    position: absolute;
+    transform: scale(.4);
+    top: -140px;
+    left:-90px;
+    animation-name:precent;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite;
+    z-index:22;
+}
+@keyframes precent {
+0%{
+ transform: scale(.5s);
+}
+20%{
+ transform: scale(.6s);
+}
+40%{
+    transform: scale(.7);
+}
+60%{
+    transform: scale(.5);
+}
+80%{
+    transform: scale(.4);
+}
+100%{
+    transform: scale(.3);
+}
+}
+.show-burger{
+    position: relative;
+}
+.show-burger img{
+    position: absolute;
+    transform: scale(1.9);
+    right:80px;
+    top:150px;
+    z-index:1;
+    transition: all .5s ease-in;
+}
+.show-burger::before{
+    content: "";
+    background-image: url(../img/burger-text.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:-2px;
+    right:110px;
+    animation-name:rotate;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite; 
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);  
+      }
+    100%{
+        transform: rotate(-10deg);
+        }
+    }
+
+.mainfood:hover .show-burger img{
+    transform: scale(2.2);
+}
+.back-chili{
+position: relative;
+}
+.chili{
+    width: 400px;
+    height:300px;
+    background-image: url(../img/chili-shape.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left:-110px;
+    top:100px;
+}
+.back-potatoas{
+    position: relative;
+}
+.potatoas{
+    width: 250px;
+    height:250px;
+    position: absolute;
+    background-image:url(../img/fry-shape.png);
+    background-repeat: no-repeat;
+    right:0;
+    top:-40px;
+}
+.pizza-item{
+    background-image: url(../img/pizza-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 610px;
+    height:390px;
+    overflow: hidden;
+}
+.pizza-item .pizza-text img{
+    margin-top:90px;
+    padding: 40px 0;
+    transform: scale(.8);
+    animation-name:pizzascale;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite; 
+    
+}
+@keyframes pizzascale {
+    0%{
+     transform: scale(.7s);
+    }
+    20%{
+     transform: scale(.6s);
+    }
+    40%{
+        transform: scale(.5);
+    }
+    60%{
+        transform: scale(.5);
+    }
+    80%{
+        transform: scale(.6);
+    }
+    100%{
+        transform: scale(.7);
+    }
+    }
+.pizza-item .pizza img{
+    transform: scale(1.9);
+    padding: 60px 55px;
+    margin-left: 30px;
+    transition: all .5s ease-in;
+}
+.pizza:hover.pizza img{
+    transform: scale(2.2);
+}
+.pizza-item .pizza{
+    position: relative;
+}
+.pizza::before{
+    content: "";
+    position: absolute;
+    top:20px;
+    left: 20;
+    background-image: url(../img/pizza-text-2.png);
+    background-repeat: no-repeat;
+    width:200px;
+    height:300px;
+    z-index: 11;
+    animation-name:pizzatext;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite; 
+}
+@keyframes pizzatext {
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);  
+      }
+    100%{
+        transform: rotate(-10deg);
+        }
+ }
+    /* mark */
+.marka{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.marka h4{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom: 25px;
+}
+.marka span{
+    color: var(--mainColor);
+}
+.all-mark{
+    display: flex;
+    padding: 20px 30px;
+}
+.img-mark{
+    padding: 25px 30px;
+    cursor: pointer;
+}
+/* chicken-grilled */
+.chicken-grilled{
+    background-image: url(../img/main-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    margin-top: 50px;
+    padding: 30px 20px;
+    position: relative;
+}
+.grilled-text{
+    margin-top:80px;
+    padding: 60px 0;
+}
+.grilled-text h4{
+    color: white;
+    font-weight:800;
+}
+.grilled-text h2{
+    font-weight: 700;
+    color: white;
+    line-height: 2;
+    font-size: 40px;
+}
+.grilled-text span{
+    color: var(--mainColor);
+}
+.grilled-text p{
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.btn-green {
+    border: 0;
+    margin-top:20px;
+    background-color:var(--primaryColor);
+    padding: 17px 50px;
+    border-radius:5px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+}
+.btn-green::after{
+    content: "";
+    background-color: var(--mainColor);
+    width:0%;
+    height:0%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index:-1;
+    transition: all .3s ease-in;
+}
+.btn-green:hover::after{
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.btn-green i{
+    padding-right:7px;
+}
+.grilled-img .grilled-img1 img{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    right:50px;
+    top: 10px;
+    animation-name:spicei;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite; 
+}
+@keyframes spicei {
+    0%{
+        transform: rotate(30deg);
+    }
+    10%{
+        transform: rotate(50deg);
+      }
+      20%{
+        transform: rotate(70deg);
+      }
+      30%{
+        transform: rotate(90deg);
+      }
+    40%{
+        transform: rotate(110deg);
+      }
+      50%{
+        transform: rotate(120deg);
+      }
+      60%{
+        transform: rotate(150deg);
+      }
+      70%{
+        transform: rotate(170deg);
+      }
+      80%{
+        transform: rotate(190deg);
+      }
+      90%{
+        transform: rotate(220deg);
+      }
+    100%{
+        transform: rotate(360deg);
+        }
+ }
+.grilled-img2 {
+    margin-top: 80px;
+    position: relative;
+}
+.grilled-img2::after{
+    content: "";
+    position: absolute;
+    top:20px;
+    left:0;
+    top:310px;
+    background-image: url(../img/pizza-text-2.png);
+    background-repeat: no-repeat;
+    width:200px;
+    height:300px;
+    z-index: 11;
+    animation-name:pizzatext;
+    animation-duration:3s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite; 
+}
+@keyframes pizzatext {
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+          }
+    100%{
+        transform: rotate(-10deg);
+            }
+ }
+ .grilled-img .grilled-img3 img{
+    width:150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+/* salling-food */
+.salling-food{
+    margin-top:80px;
+    margin-bottom: 50px;
+    padding: 60px 10px;
+}
+.start-salle{
+    text-align: center;
+    line-height: 3;
+}
+.start-salle p{
+    color: var(--primaryColor);
+    font-weight: 700;
+}
+.start-salle h3{
+    font-weight:700;
+    font-size:40px;
+    color: #212121;
+}
+.sale-food1{
+    margin-top:50px;
+    padding:10px 20px;
+    border-radius: 5px;
+   transition: all .5s ease;
+}
+.sale-food1:hover{
+    background-color: var(--mainColor);
+    border-radius:10px;
+
+}
+.img-food i{
+    color: #fff;
+    transition: all .5s ease;
+    margin-top:30px;
+}
+.img-food span{
+    background-color: #212121;
+    padding: 10px 13px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.img-food span:hover{
+    background-color:#fff;
+    color: #FFC222;
+}
+.img-food span:hover i{
+    color: var(--mainColor);
+}
+.img-food{
+    background-color: #fff;
+    border-radius:10px;
+    transition: all .5s ease;
+}
+.sale-food1:hover .img-food{
+    background-color: var(--mainColor);
+}
+.img-food  a{
+    border: 0;
+    margin-top:20px;
+    background-color:#fff;
+    padding:4px 30px;
+    border-radius:2rem;
+    color:#fff;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    margin-left: 10px;
+}
+.sale-food1:hover .img-food a{
+    background-color: var(--blackColor);
+}
+.img-food  a::after{
+    content: "";
+    background-color:var(--primaryColor);
+    width:0%;
+    height:0%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index:-1;
+    border-radius:2rem;
+    transition: all .3s ease-in;
+}
+.img-food  a:hover::after{
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.sale-food1 .text-sale p,h4{
+    display: inline-block;
+}
+.sale-food1 .text-sale span{
+    background-color:var(--mainColor);
+    padding: 4px 6px;
+    border-radius: 5px;
+    transform-origin: all .5s ease;
+}
+.sale-food1:hover .text-sale span{
+    background-color: #fff;
+}
+.sale-food1 .text-sale p{
+    font-weight: 700;
+}
+.sale-food1 .text-sale del{
+    margin-left: 10px;
+    color: var(--textColor);
+    font-size: 18px;
+}
+.sale-food1 .text-sale  h4{
+    color: var(--textColor);
+    margin-left: 10px;
+    font-size:20px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+.sale-food1 .text-sale h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 40px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.text-sale h3:hover{
+    color: #fff;
+}
+.img-food{
+    height:350px;
+}
+.img-food img{
+    height: 220px;
+}
+.btn-salle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+/* tranding */
+.tranding{
+    margin-top: 60px;
+    padding: 40px 0;
+}
+.tranding-text{
+    margin-left: 50px;
+}
+.tranding .tranding-text h5{
+    margin-top: 70px;
+    color: var(--primaryColor);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 2;
+}
+.tranding .tranding-text h3{
+    color: var(--blackColor);
+    font-size:60px;
+    font-weight:600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.tranding .tranding-text span{
+    color: var(--primaryColor);
+}
+.tranding .tranding-text p{
+    color: var(--textColor);
+    margin-bottom: 30px;
+}
+.logo-chicken,.logo-pizza,.logo-burger{
+    display: flex;
+    margin-top:30px;
+    background-color: #5c5c5b18;
+    transition: all .5s ease;
+}
+.logo-burger:hover{
+    background-color: var(--mainColor);
+}
+.logo-chicken:hover{
+    background-color: var(--mainColor);
+}
+.logo-pizza:hover{
+    background-color: var(--mainColor);
+}
+.tranding-text img{
+    padding: 10px;
+    width:80px;
+}
+.tranding .tranding-text h4{
+    color: var(--blackColor);
+    margin:15px 20px;
+    padding-top: 10px;
+}
+.tranding-img{
+    background-image: url(../img/comboo-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.tranning-img1{
+    position: relative;
+}
+.tranning-img1 .offer{
+    width:150px;
+    transform: scale(1.5);
+    position: absolute;
+    top:0;
+    left:150px;
+    animation-name: offer;
+    animation-duration:5s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite;
+}
+@keyframes offer{
+    0%{
+        transform: scale(1.6);
+    }
+    20%{
+        transform: scale(1.8);
+    }
+    40%{
+        transform: scale(2);
+    }
+    60%{
+        transform: scale(1.8); 
+    }
+    80%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scale(1.4); 
+    }
+}
+.tranning-img1 .tomat{
+    position: absolute;
+    right:40px;
+    top: 20px;
+    width:120px;
+    animation-name: tomat;
+    animation-duration:5s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite;
+}
+@keyframes tomat{
+    00%{
+        transform:rotate(90deg);
+    }
+    30%{
+        transform:rotate(100deg);
+    }
+    60%{
+        transform:rotate(90deg);
+    }
+    90%{
+        transform:rotate(80deg);
+    }
+    100%{
+        transform:rotate(100deg);
+    }
+}
+.before-pizza{
+    margin-top:80px;
+    padding: 80px 0;
+    position: relative;
+}
+.img-pizza{
+    margin-top:90px;
+    padding: 90px 0;
+}
+.before-pizza::before{
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    background-image:url(../img/pizza-text.png);
+    width:280px;
+    height: 280px;
+    animation-name: pizzabefore;
+    animation-duration:5s;
+    animation-delay:.4s;
+    animation-iteration-count:infinite;
+}
+@keyframes pizzabefore {
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);  
+      }
+    100%{
+        transform: rotate(-10deg);
+        }
+ }
+ .icons-food{
+    margin-top: 70px;
+    background-image: url(../img/food-shape-2.png);
+    height:300px;
+    background-size: cover;
+    background-color:var(--blackColor);
+    color: #fff;
+    width: 88%;
+    margin: 60px 80px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+ }
+ .icons-food i{
+    display: block;
+    font-size:40px;
+    color: var(--mainColor);
+    margin-bottom: 25px;
+    margin-top: 50px;
+ }
+ .icons-food h4{
+    margin-bottom:15px;
+    font-size:20px;
+    font-weight:600;
+ }
+ .icons-food h5{
+    font-size: 17px;
+ }
+ .delivery{
+    margin-top: 80px;
+    padding: 60px 10px;
+    background-image: url(../img/main-cta-bg-1.jpg);
+    background-size: cover;
+    width: 88%;
+    margin-left:80px;
+    border-radius:20px;
+    height: 350px;
+    position: relative;
+ }
+ .delivery .text-delivery h4{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 600;
+ }
+ .delivery .text-delivery  h3{
+    margin-top: 10px;
+    font-size:60px;
+    color: #fff;
+    line-height: 1.1;
+ }
+ .text-delivery span{
+    color: var(--mainColor);
+ }
+ .text-delivery a{
+    border: 0;
+    background-color:#fff;
+    padding: 17px 50px;
+    border-radius:5px;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+    margin-top: 20px;
+}
+.text-delivery a::after{
+    content: "";
+    background-color:var(--mainColor);
+    width:0%;
+    height:0%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index:-1;
+    border-radius:5px;
+    transition: all .3s ease-in;
+}
+.text-delivery a:hover::after{
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.text-delivery i{
+    color: var(--primaryColor);
+    margin-right: 10px;
+    transition: all .5s ease;
+}
+.text-delivery a:hover i{
+    color: #fff;
+}
+.text-delivery a:hover{
+    color: #fff;
+}
+.img-delivery{
+    margin-bottom: 70px;
+}
+.img-delivery img{
+    position: absolute;
+    top: 0;
+    right:100px;
+    width: 500px;
+    transform: scale(1.1);
+    margin-bottom: 70px;
+
+}
+footer{
+    margin-top:90px;
+    padding: 60px 0;
+    background-color:rgba(128, 128, 128, 0.13);
+}
+.foot1 img{
+    width: 130px;
+    display: block;
+}
+.foot1 h4{
+    font-size: 17px;
+    color: var(--textColor);
+    margin-top: 20px;
+}
+.foot1 h5{
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.foot1 a{
+    background:rgba(128, 128, 128, 0.219);
+    color:var(--blackColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 8px;
+    transition: all .3s;
+}
+.foot1 a:hover{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+.foot2 ul{
+    margin-left: 2px;
+    padding: 10px 0;
+ }
+ .foot2 h5{
+     margin-top: 15px;
+     font-weight: 700;
+ }
+ .foot2{
+    margin-left:50px;
+ }
+ .foot2 a{
+    color: black;
+    font-size: 20px;
+ }
+ .foot3 h6{
+    color: #5C5C5B;
+    font-size: 20px;
+    margin-top: 10px;
+ }
+ .foot2 a{
+    transition: all .5s ease;
+ }
+ .foot2 a:hover{
+    color: var(--primaryColor);
+ }
+ .foot2 ul li a{
+    transition: all .5s ease;
+}
+.foot2 ul li:hover{
+    color: var(--primaryColor);
+    transform:translateX(10px);
+}
+.foot2 h6 span{
+    color: var(--mainColor);
+}
+@media screen and (max-width:992px){
+    .shopping a{
+        padding: 10px 35px;
+    }
+     .start-img img{
+        width:440px;
+     }
+    .the-start .start-text p{
+        font-weight:400;
+        font-size:20px;
+    }
+    .the-start .start-text h1{
+        font-size:50px;    
+    }
+    .show-food .text-show {
+        margin-left:50px;
+        padding-left:20px;
+    }
+    .show-food .text-show p{
+        font-weight:500;
+        font-size:20px;
+    }
+    .show-food .text-show h2{
+        font-size:30px;
+        font-weight:600;
+    }
+    .food1 .text-food h3::after{
+        left:110px;
+    }
+    .food1 .text-food p{
+        font-weight:600;
+        font-size:19px;
+    }
+    /*  */
+    .show-product{
+        margin-left:15px;
+    }
+    .mainfood{
+        width:450px;
+    }
+    .show-product h3{
+        font-size:30px;
+        font-weight:500;
+    }
+    .pizza-item{
+        margin-left:70px;
+    }
+    .show-burger img{
+        position: absolute;
+        transform: scale(1.5);
+    }
+    .mainfood:hover .show-burger img{
+        transform: scale(1.8);
+    }
+    .pizza-item{
+        width:500px;
+    }
+    .pizza-item .pizza img{
+        transform: scale(1.4);
+        padding: 60px 20px;
+    }
+    .pizza:hover.pizza img{
+        transform: scale(1.2);
+    }
+    /*  */
+    .start-salle p{
+        font-weight:500;
+    }
+    .start-salle h3{
+        font-weight:500;
+        font-size:30px;
+    }
+    .img-food i{
+        color: #fff;
+        transition: all .5s ease;
+        margin-top:30px;
+    }
+    .img-food span{
+        margin-left:10px;
+    }
+    .img-food  a{
+        padding:4px 20px;
+    }
+    .sale-food1:hover .text-sale span{
+        background-color: #fff;
+    }
+    .sale-food1 .text-sale p{
+        font-weight:400;
+    }
+    .sale-food1 .text-sale del{
+        font-size:16px;
+    }
+    .sale-food1 .text-sale  h4{
+        font-size:19px;
+    }
+    .sale-food1 .text-sale h3{
+        font-size:18px;
+        font-weight:400;
+    }
+/*  */
+.tranding-text{
+    margin-left:30px;
+}
+.tranding .tranding-text h3{
+    color: var(--blackColor);
+    font-size:40px;
+}
+/*  */
+.delivery{
+    padding: 60px 0;
+    width:90%;
+    margin-left:20px;
+ }
+ .delivery .text-delivery h4{
+    font-size: 18px;
+    font-weight:400;
+ }
+ .delivery .text-delivery  h3{
+    margin-top: 10px;
+    font-size:30px;
+ }
+ .text-delivery span{
+    color: var(--mainColor);
+ }
+}
+@media screen and (max-width:800px) {
+    .shopping{
+        margin-top: 30px;
+    }
+    .the-start .start-text{
+        margin-top:10px;
+        padding:10px 0;
+    }
+     .start-img img{
+        width:300px;
+     }
+     .start-img::after{
+        opacity: 0;
+     }
+    .the-start .start-text h1{
+        font-size:30px;
+    }
+    .show-food{
+        margin-top: 20PX;
+    }
+    .img-food img{
+        width: auto;
+    }
+    /*  */
+    .delishous-food{
+        text-align: center;
+        margin: 0 80px;
+        margin-bottom: 30px;
+    }
+    .show-product{
+        margin-top:40px;
+        margin-left:0;
+    }
+    .show-product h5{
+        margin: 30px 35px;
+    }
+    .show-product h3{
+        font-size:40px;
+    }
+    .pizza-item{
+        margin-left:0px;
+    }
+
+    .grilled-text{
+        margin-top:20px;
+        padding: 20px 0;
+    }
+    .grilled-text a{
+        padding:10px 20px;
+    }
+    .grilled-img .grilled-img1 img{
+        width:130px;
+        height: 130px;
+    }
+    .grilled-img2 {
+        margin-top:20px;
+        margin-left:80px;
+    }
+    .grilled-img2::after{
+    opacity: 0;
+    }
+    .grilled-img2 img{
+        width:400px;
+        margin-top: -90px;
+    }
+    .img-pizza{
+        width: 470px;
+    }
+    .icons-food{
+        height:70%;
+     }
+     .delivery{
+        height:400px;
+     }
+     .delivery .text-delivery  h3{
+        font-size:23px;
+     }
+    .img-delivery img{
+        position: absolute;
+        top: 0;
+        right:0;
+        width:470px;
+    }
+ }
+ @media screen and (max-width:768px){
+    .food1 .text-food h3::after{
+        left:240px;
+    }
+    .grilled-img2{
+        margin-top: 20px;
+        margin-left: 90px;
+        padding-left: 40px;
+    }
+ }
+ @media screen and (max-width:600px){
+    .food1 .text-food h3::after{
+        left:170px;
+    }
+    .icons-food{
+        height:80%;
+     }
+     .delivery{
+        height:300px;
+     }
+     .delivery .text-delivery  h3{
+        font-size:15px;
+     }
+    .img-delivery img{
+        right:-15px;
+        width:400px;
+    }
+    .text-delivery a{
+        padding: 17px 25px;
+    }
+ }
