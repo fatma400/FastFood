@@ -9,7 +9,6 @@
 }
 body{
     background-color: var(--backgroundColor);
-    background-color:red;
 }
 ::selection{
     background-color: var(--primaryColor);
@@ -1369,4 +1368,187 @@ footer{
     .text-delivery a{
         padding: 17px 25px;
     }
+ }
+ @media screen and (max-width:400px){
+    .start-text a{
+        padding: 17px 30px;
+    }
+    .start-img img{
+        width:230px;
+     }
+     .start-img{
+        position: relative;
+         margin-top:20px;
+        margin-left:5px; 
+     }
+     .food1 .text-food h3::after{
+        left:85px;
+    }
+    /*  */
+    .show-product{
+        margin-top:40px;
+    }
+    .delishous-food .img-back img{
+        display: none;
+    }
+    .potatoas{
+        display: none;
+    }
+    .mainfood{
+        width:500px;
+        height:370px;
+    }
+    .show-product h5{
+        margin: 50px 45px;
+        font-weight: 600;
+    }
+    .show-product h3{
+        margin: 80px 55px;
+        line-height:4;
+    }
+    .show-product .show-pro1 img{
+        transform: scale(.1);
+        top: -120px;
+    }
+    @keyframes precent {
+    0%{
+     transform: scale(.5s);
+    }
+    20%{
+     transform: scale(.6s);
+    }
+    40%{
+        transform: scale(.7);
+    }
+    60%{
+        transform: scale(.5);
+    }
+    80%{
+        transform: scale(.4);
+    }
+    100%{
+        transform: scale(.3);
+    }
+    }
+   .delishous-food{
+    padding: 0;
+   }
+   .mainfood{
+    width:500px;
+    width:270px;
+    height:300px;
+    margin: 0 -80px;
+   }
+   .mainfood h3{
+    font-size: 20px;
+   }
+   .show-burger img{
+    display: none;
+}
+.pizza-item{
+    width:275px;
+    height:250px;
+    margin:25px -90px;
+}
+.pizza-item .pizza img{
+    transform: scale(5);
+    padding:70px 55px;
+    margin-left:0;
+}
+.pizza:hover.pizza img{
+    transform: scale(5);
+}
+.pizza::before{
+    display: none;
+}
+.grilled-text{
+    margin-top:60px;
+    padding: 10px 0;
+    text-align: center;
+}
+.grilled-text h2{
+    font-size:30px;
+}
+.grilled-text span{
+    color: var(--mainColor);
+}
+.grilled-img{
+    display: none;
+}
+.sale-food1 img{
+    width: 200px;
+}
+/*  */
+.tranding{
+    margin-top:30px;
+    padding:20px 0;
+}
+.tranding-text{
+    margin-left:0;
+}
+.tranding .tranding-text h3{
+    font-size:25px;
+}
+.tranding-text h4{
+    font-size:15px;
+}
+.tranning-img1 .offer{
+    top:0;
+    left:0px;
+}
+.tranning-img1 .tomat{
+    right:5px;
+    width:100px;
+}
+.before-pizza{
+    padding:60px 0;
+}
+.img-pizza{
+    margin-top:90px;
+    padding: 90px 0;
+}
+.before-pizza::before{
+   display: none;
+}
+.tranding-img{
+    height:390px;
+}
+.before-pizza img{
+    width:280px;
+}
+.icons-food{
+    height: auto;
+    margin: 60px 0;
+ }
+/*  */
+.delivery{
+    margin-top: 80px;
+    padding: 10px 0;
+    width:90%;
+    margin-left:0;
+    height: 350px;
+ }
+ .delivery .text-delivery h4{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 600;
+ }
+ .delivery .text-delivery  h3{
+    margin-top: 10px;
+    font-size:20px;
+ }
+ .text-delivery a{
+    padding: 8px 15px;
+}
+
+.img-delivery{
+    margin-bottom: 70px;
+}
+.img-delivery img{
+    position: absolute;
+    top:150px;
+    right:-33px;
+    width:255px;
+}
+
  }
