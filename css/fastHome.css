@@ -9,6 +9,7 @@
 }
 body{
     background-color: var(--backgroundColor);
+    background-color:red;
 }
 ::selection{
     background-color: var(--primaryColor);
